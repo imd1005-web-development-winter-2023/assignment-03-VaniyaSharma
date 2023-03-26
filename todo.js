@@ -1,15 +1,15 @@
-const form = document.querySelector(".form1");
-const todoTextFromForm = document.querySelector("#todo-item");
+const textform = document.querySelector(".form1");
+const todoTextuserinput = document.querySelector("#todo-item");
 
-const todoList = document.querySelector(".todolist1");
+const todoListi = document.querySelector(".todolist1");
 // const todos = ["chips"];
 
 const todos = [];
 
 function drawToDoList() {
   // Clear all of the entries in the list
-  while (todoList.firstChild) {
-    todoList.removeChild(todoList.firstChild);
+  while (todoListi.firstChild) {
+    todoListi.removeChild(todoListi.firstChild);
   }
 
   for (let i = 0; i < todos.length; i++) {
@@ -44,7 +44,7 @@ function drawToDoList() {
     listItem.appendChild(todoDoneButton);
     listItem.appendChild(todoDeleteButton);
 
-    todoList.appendChild(listItem);
+    todoListi.appendChild(listItem);
   }
 }
 
@@ -75,38 +75,38 @@ function deleteTodo(event) {
 function addTodo(event) {
   event.preventDefault();
 
-  todoTextFromForm.value;
+  todoTextuserinput.value;
 
   // todos.push(todoTextFromForm.value);
 
   todos.push({
-    text: todoTextFromForm.value,
+    text: todoTextuserinput.value,
     isDone: false,
   });
 
   console.log(todos);
 
-  form.reset();
+  textform.reset();
 
   drawToDoList();
 }
 
-form.addEventListener("submit", addTodo);
+textform.addEventListener("submit", addTodo);
 
-let appContainer = document.getElementById(appID);
+let appContain = document.getElementById(appID);
 
 function inititialise() {
   // If anything is wrong with the app container then end
-  if (!appContainer) {
-    console.error("Error: Could not find app contianer");
+  if (!appContain) {
+    console.error("Error: Could not find application container");
     return;
   }
 
   // Create an h1 and add it to our app
-  const h1 = document.createElement("h1");
+  const h1 = document.createElement("header 1");
   h1.innerText = headingText;
-  appContainer.appendChild(h1);
+  appContain.appendChild(h1);
 
   // Init complete
-  console.log("App successfully initialised");
+  console.log("App was successfully initialised");
 }
