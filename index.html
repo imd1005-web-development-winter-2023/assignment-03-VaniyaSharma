@@ -1,45 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 03</title>
+<html>
+
+<head>
+    <title>Assignment_03_To-DO List app</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
 
     <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
-
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Specifies the document mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <!--
 
-      ADD YOUR ASSIGNMENT 03 CODE
+    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <link rel="stylesheet" href="./reset.css" />
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+    <!-- This is where all of our awesome CSS code goes -->
+    <link rel="stylesheet" href="./style.css" />
 
-      IMPORTANT CHECKLIST:
 
-      - Are users able to create and delete to do list items?
-      - Have you set a favicon? (included - but it's a rocket)
-      - Do you have a css reset file? (included)
-      - Has a team member conducted a code review and left a GitHub Issue in your repo?
-      - Have you conducted a code review and left a GitHub Issue on your team member's repo?
 
-    -->
-    <main>
-      <div id="app"></div>
-    </main>
+</head>
 
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
-  </body>
+<body>
+
+    <img class="logo" src="./images/sky-logo.png" style="max-width:100%;height:auto;" alt="sy-logo">
+
+    <h1 class="header">Add your To-Do's</h1>
+
+
+    <form class="form1">
+        <input class="todo-input" name="todo-item" id="todo-item" placeholder="Enter what you need to do" type="text" required />
+        <input class="task-button" type="submit" value="Add Task" />
+        <div class="flex-container">
+        <ul class="todolist1"></ul>
+    </div>
+    </form>
+
+    <div id="app"></div>
+
+
+
+
+    <script src="./todo.js"></script>
+
+</body>
+
 </html>

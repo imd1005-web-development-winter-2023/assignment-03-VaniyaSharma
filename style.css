@@ -25,12 +25,6 @@
 /*
   PAGE / BODY
 */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-}
-
 main {
   min-height: 100vh;
 
@@ -52,4 +46,88 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.logo{
+
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 440px;
+  max-width: 600px;
+  max-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--body-default-colour);
+  background-color: var(--body-background-colour);
+  background-image: url(./images/background\ image.jpg);
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: -210px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  height: 50px;
+  color: white;
+}
+
+.form1 {
+  text-align: center;
+  margin-top: 90px;
+  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.flex-container{
+  display: grid;
+  width: 700px;
+  grid-template-columns: 60% 5% 5%;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 415px;
+  margin-right: 900px;
+  
+}
+
+@media only screen and (max-width: 20px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 2rex;
+  }
+}
+
+.todo-input{
+
+  width: 350px;
+}
+
+.todolist1 {
+  font-style: bold;
+  font-size: 20px;
+
+  padding: 20px;
+  letter-spacing: 0.3rem;
+  background-color: whitesmoke;
+  backdrop-filter: blur(40px);
 }
